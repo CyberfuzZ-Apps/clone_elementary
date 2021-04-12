@@ -16,7 +16,7 @@ public class FactorialTest {
     public void whenCalculateFactorialForZeroThenOne() {
         int in = 0;
         int expected = 1;
-        int out = Factorial.calc(0);
+        int out = Factorial.calc(in);
         Assert.assertEquals(expected, out);
     }
 }
