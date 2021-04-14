@@ -14,7 +14,7 @@ public class ArrayDefinition {
         names[1] = "Evgeny Zaytsev";
         names[2] = "James Hatfield";
         names[3] = "Kurt Cobain";
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < names.length; i++) {
             System.out.println(names[i]);
         }
     }
