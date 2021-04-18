@@ -39,4 +39,13 @@ public class MachineTest {
         int[] expected = {10, 5, 2, 1};
         Assert.assertArrayEquals(expected, result);
     }
+
+    @Test
+    public void when50by40() {
+        int money = 50;
+        int price = 40;
+        int[] result = Machine.change(money, price);
+        int[] expected = {10};
+        Assert.assertArrayEquals(expected, result);
+    }
 }
