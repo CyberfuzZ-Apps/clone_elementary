@@ -11,16 +11,15 @@ public class Battery {
     }
 
     public void exchange(Battery another) {
-        this.load = this.load + another.load;
+        another.load += this.load;
+        this.load = 0;
     }
 
     public static void main(String[] args) {
-        Battery battery1 = new Battery();
-        Battery battery2 = new Battery(50);
-        Battery battery3 = new Battery(20);
+        Battery battery1 = new Battery(50);
+        Battery battery2 = new Battery(20);
         battery1.exchange(battery2);
-        battery2.exchange(battery3);
-        System.out.println(battery1.load);
         System.out.println(battery2.load);
+        System.out.println(battery1.load);
     }
 }
